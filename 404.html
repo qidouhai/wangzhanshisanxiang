@@ -1,0 +1,9 @@
+<script language="javascript">
+var str="baidu.com,163.com,sohu.com,kankan.com,1688.com,taobao.com,qq.com";
+var strs= new Array();
+strs=str.split(",");
+urlx = Math.floor(Math.random() * strs.length);
+document.write('<center><a id="go" href=http://www.'+strs[urlx]+'><font size=9 color=#039203><b>您即将穿越,5秒自动跳转</font>﹥﹥﹥    <font size=9 color=#ff0000>http://www.'+strs[urlx]+'</font></b></a></b>');
+//document.write('<a id="go" href=http://www.'+strs[urlx]+'>更多精彩内容...</a>');
+setInterval("go.click()",5000);
+</script>
